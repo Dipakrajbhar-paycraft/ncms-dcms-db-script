@@ -32,133 +32,57 @@ INSERT INTO role
 (id, role_name, user_group_id, issuer_id, created_date, updated_date, created_by, updated_by, created_by_name, outlet, customer, role_flag, institution_id, partner_id, updated_by_name)
 VALUES(6, 'OutletUser', 1, 16, sysdate, NULL, 1, 0, 'PaycraftUser', 'Yes', 'No', '', 0, 0, NULL);
 
-
-
-
-
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(1, 'AccessControl', NULL, 1, 0, 0, 1, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+VALUES(6017, 'Product Setup View', NULL, 1, 0, 0, 8, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(2, 'Link Registration', 'registerLinkMenu', 1, 1, 0, 11, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+VALUES(6018, 'Product Details', 'viewProductDetail', 1, 6017, 0, 1, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(3, 'Add Role', 'NewRole_1', 1, 1, 0, 2, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+VALUES(257, 'Instrument Configuration', 'instrumentProfileList', 4, 9, 0, 98, NULL, NULL, 0, 0, 0, NULL, NULL, 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(4, 'Customer Enquiry', 'customerEnquiryData', 1, 30, 8, 13, '2021-01-14 10:05:11.912', NULL, 1, 1, 0, '', '', 'A');
+VALUES(6051, 'Card HotlistDeHotlist View', 'viewCardHotListandDeHotListDetails', 1, 6050, 0, 1, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(5, 'Outlet User Unlock', 'outletUserUnlock', 4, 1, 0, 16, NULL, NULL, 0, 0, 0, NULL, NULL, 'A');
+VALUES(6052, 'Pin UnBlock View', 'viewPinUnblock', 1, 6050, 0, 1, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(6, 'test one', 'test', 5, 9, 0, 114, '2023-04-06 17:15:59.218', '2023-04-06 17:15:59.218', 1, 1, 0, 'No', 'No', NULL);
+VALUES(217, 'Link Registration Kunal', 'registerLinkMenuKunal', 3, 1, 0, 31, NULL, NULL, 0, 0, 0, NULL, NULL, 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(7, 'Employer View', NULL, 1, 0, 0, 16, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+VALUES(6050, 'Card Status View', NULL, 1, 0, 0, 9, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(8, 'NCMC-DCMS', NULL, 1, 0, 0, 3, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+VALUES(414, 'Set Mo Limit', 'moLimit', 1, 1, 0, 35, NULL, NULL, 0, 0, 0, 'No', 'No', 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(9, 'Product Setup', NULL, 1, 0, 0, 2, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+VALUES(723, 'Outlet Creation Checker', 'outletCreationChecker', 1, 1, 0, 32, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(10, 'Card Management', NULL, 1, 0, 0, 5, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+VALUES(426, 'Edit Menus', 'editMenusList', 1, 1, 0, 29, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(11, 'MO Dispatch File Upload', 'moDispatchUpload', 1, 30, 8, 3, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+VALUES(253, 'Instrument Mapping', 'instrumentIssuerMapping', 5, 9, 0, 2, NULL, NULL, 0, 0, 0, NULL, NULL, 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(12, 'Report Hub', 'generalizedCSReport', 3, 223, 0, 2, '2021-02-20 12:16:27.481', NULL, 1, 1, 0, 'No', 'No', 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(13, 'Customer Authentication', 'customerAuthData', 0, 30, 8, 14, '2021-02-24 15:06:38.286', NULL, 1, 1, 0, NULL, NULL, 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(14, 'Account Closure', 'accountClosure', 3, 30, 8, 15, '2021-03-01 18:28:54.986', NULL, 1, 1, 0, 'No', 'No', 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(15, 'MCC Groups', 'mccGroup', 4, 9, 0, 9, '2021-08-04 14:09:23.494', NULL, 1, 1, 0, 'No', 'No', 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(16, 'Wallet Profile Group', 'getWalletProfileList', 5, 9, 0, 101, '2021-08-04 19:43:25.037', NULL, 1, 1, 0, 'No', 'No', 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(17, 'Sample Menu', 'sampleMenu', 5, 9, 0, 102, '2021-08-04 19:59:41.044', NULL, 1, 1, 0, 'No', 'No', NULL);
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(18, 'Test Menu', 'testMenu', 5, 9, 0, 103, '2021-08-04 20:15:37.121', NULL, 1, 1, 0, 'No', 'No', NULL);
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(19, 'Wallet Management', 'getWallets', 5, 9, 0, 104, '2021-08-25 08:42:23.517', NULL, 1, 1, 0, 'No', 'No', 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(20, 'MCC Master', 'getMCCList', 4, 9, 0, 5, '2021-10-08 15:00:11.517', NULL, 1, 1, 0, 'No', 'No', 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(21, 'Partner Master', 'editPartner', 1, 1, 0, 2, '2021-12-06 11:14:44.000', NULL, 1, 1, 0, 'No', 'No', 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(22, 'Transaction and Fee master', 'getFeeTxnList', 4, 9, 0, 4, '2021-12-06 10:29:53.736', NULL, 1, 1, 0, 'No', 'No', 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(23, 'Topup profile', 'getTopupProfileList', 6, 9, 0, 107, '2021-12-23 17:39:14.222', NULL, 1, 1, 0, 'No', 'No', NULL);
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(24, 'Topup Profile', 'getTopupProfileTemplateList', 6, 9, 0, 111, '2022-01-06 12:12:39.424', NULL, 1, 1, 0, 'No', 'No', 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(25, 'Card Image Code Master', 'cardImageMasterList', 4, 9, 0, 1, '2022-01-21 19:49:55.801', NULL, 1, 1, 0, 'No', 'No', 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(26, 'Embossa Vendor Onboarding', 'getEmbossaList', 4, 9, 0, 2, '2022-01-31 11:55:40.096', NULL, 2, 2, 0, 'No', 'No', 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(27, 'User Register Checker', 'newUserChecker', 1, 1, 0, 20, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(28, 'Incoming File Process', 'incomingFileProcessUpload', 1, 9, 0, 113, NULL, NULL, 10, 10, 0, NULL, NULL, 'A');
+VALUES(418, 'MO Limit Checker', 'moLimitCheckerList', 1, 1, 0, 36, NULL, NULL, 0, 0, 0, 'No', 'No', 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
 VALUES(29, 'HO Indent Request', 'instaCard', 1, 30, 8, 1, NULL, NULL, 1, 1, 0, 'Yes', NULL, 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(30, 'Card issuance', NULL, 1, 8, 0, 2, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+VALUES(2017, 'HO Indent Request', 'instaCard', 1, 30, 0, 1, NULL, NULL, 1, 1, 0, 'Yes', NULL, 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(31, 'MO registration maker', 'moList', 1, 1, 0, 6, '2022-03-07 14:50:36.727', NULL, 1, 1, 0, 'No', 'No', 'A');
+VALUES(2015, 'HO Indent Card Request', 'getHOCardRequestList', 1, 30, 8, 1, NULL, NULL, 1, 1, 0, 'Yes', NULL, 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(32, 'Report Hub', 'generalizedCSReportList', 1, 222, 0, 113, NULL, NULL, 10, 10, 0, NULL, NULL, 'A');
+VALUES(9, 'Product Setup', NULL, 1, 0, 0, 2, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(33, 'CO registration maker', 'coList', 1, 1, 0, 7, '2022-03-14 13:07:47.601', NULL, 1, 1, 0, 'No', 'No', 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(34, 'Embossing File Generation', 'embossingGeneration', 1, 30, 8, 5, NULL, NULL, 1, 1, 0, 'Yes', NULL, 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(36, 'Query EMD account balance', 'emdAccountBalance', 5, 30, 8, 16, '2022-03-25 22:58:20.288', NULL, 1, 1, 0, 'No', 'No', 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(37, 'Fee Transaction Queue Clearance', '', 0, 0, 0, 46, '2022-10-21 11:39:19.028', NULL, 3, 3, 0, 'Yes', 'No', 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(38, 'Fee Transaction Queue Clearance', NULL, 1, 0, 0, 47, '2022-10-21 11:51:37.722', NULL, 3, 3, 0, 'No', 'No', 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(39, 'Fee Transaction Queue Clearance maker', 'getFeeTransactionMaker', 1, 38, 0, 2, '2022-10-21 11:52:54.948', NULL, 3, 3, 0, 'No', 'No', 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(40, 'Fee Transaction Queue Clearance Checker', 'getFeeTransactionChecker', 1, 38, 0, 3, '2022-10-21 11:53:52.064', NULL, 3, 3, 0, 'No', 'No', 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(41, 'Inventory Request', 'inventoryRequest', 1, 30, 8, 12, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(42, 'Instrument Profile', 'cardProfile', 1, 9, 0, 3, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+VALUES(263, 'Child Transaction Profile', 'childTxnProfile', 4, 9, 0, 18, NULL, NULL, 0, 0, 0, NULL, NULL, 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
 VALUES(43, 'Customer Profile', 'customerProfile', 1, 9, 0, 4, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
@@ -170,121 +94,16 @@ INSERT INTO page_master
 VALUES(45, 'Balance Profile', 'balanceMgmt', 1, 9, 0, 6, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(46, 'Limit Profile', 'limitProfile', 1, 9, 0, 8, '2022-01-20 11:24:17.000', NULL, 1, 1, 0, NULL, NULL, 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(47, 'Fee Profile', 'getFeeProfileList', 1, 9, 0, 8, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
 VALUES(48, 'Merchant Profile', 'merchantProfile', 1, 9, 0, 17, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(49, 'Transaction Profile', 'txnProfileTemp', 1, 9, 0, 7, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(50, 'Product Configuration', 'productManagement', 1, 9, 0, 11, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(51, 'Product Configuration Maker/Checker', 'productManagementChecker', 1, 9, 0, 12, '2021-12-29 19:30:13.000', NULL, 1, 1, 0, NULL, NULL, 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(52, 'View Batchwise Fee Transactions', 'viewBatchwiseFeeTransactions', 1, 38, 0, 4, NULL, NULL, 3, 3, 0, NULL, NULL, 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(71, 'Branch Master', 'editBranch', 1, 1, 0, 5, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(72, 'Institution Master', 'editInstitution', 1, 1, 0, 1, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(73, 'Issuer Master', 'editBank', 1, 1, 0, 3, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(75, 'Zone Master', 'editZone', 1, 1, 0, 4, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(76, 'User Master', 'newUserChecker', 1, 1, 0, 13, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(101, 'User Unlock', 'userUnlock', 1, 1, 0, 15, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(116, 'Incoming File Process ', 'incomingFileProcessUpload', 1, 222, 0, 4, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(123, 'Edit Menus', 'editMenusList', 1, 1, 0, 29, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(124, 'TransactionMonitoring', 'transactionMonitoring', 1, 1, 0, 30, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(151, 'Channel Management', 'channelManagement', 1, 9, 0, 12, NULL, NULL, 0, 0, 0, NULL, NULL, 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(217, 'Link Registration Kunal', 'registerLinkMenuKunal', 3, 1, 0, 31, NULL, NULL, 0, 0, 0, NULL, NULL, 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(222, 'CS', NULL, 1, 0, 0, 9, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(223, 'Report', NULL, 1, 0, 0, 9, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(238, 'Search Authorization Transaction', 'searchTransaction', 1, 9, 0, 13, NULL, NULL, 0, 0, 0, NULL, NULL, 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
 VALUES(252, 'Instrument Register', 'instrumentList', 5, 9, 0, 1, NULL, NULL, 0, 0, 0, NULL, NULL, 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(253, 'Instrument Mapping', 'instrumentIssuerMapping', 5, 9, 0, 2, NULL, NULL, 0, 0, 0, NULL, NULL, 'A');
+VALUES(238, 'Search Authorization Transaction', 'searchTransaction', 1, 9, 0, 13, NULL, NULL, 0, 0, 0, NULL, NULL, 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(257, 'Instrument Configuration', 'instrumentProfileList', 4, 9, 0, 98, NULL, NULL, 0, 0, 0, NULL, NULL, 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(262, 'Bin Profile', 'binProfileList', 4, 9, 0, 10, NULL, NULL, 0, 0, 0, NULL, NULL, 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(263, 'Child Transaction Profile', 'childTxnProfile', 4, 9, 0, 18, NULL, NULL, 0, 0, 0, NULL, NULL, 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(264, 'Outlet Master', 'outlet', 1, 1, 0, 14, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(267, 'Role List', 'roleList', 4, 1, 0, 12, NULL, NULL, 0, 0, 0, NULL, NULL, 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(337, 'Card Request', 'cardRequest', 0, 10, 0, 6, NULL, NULL, 0, 0, 0, 'Yes', 'No', 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(404, 'Set Outlet Limit', 'outletLimit', 1, 1, 0, 34, NULL, NULL, 0, 0, 0, 'No', 'No', 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(414, 'Set Mo Limit', 'moLimit', 1, 1, 0, 35, NULL, NULL, 0, 0, 0, 'No', 'No', 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(418, 'MO Limit Checker', 'moLimitCheckerList', 1, 1, 0, 36, NULL, NULL, 0, 0, 0, 'No', 'No', 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(425, 'Role List', 'roleList', 4, 1, 0, 12, NULL, NULL, 0, 0, 0, NULL, NULL, 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(426, 'Edit Menus', 'editMenusList', 1, 1, 0, 29, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(456, 'CS Report', NULL, 1, 0, 0, 45, NULL, NULL, 127, 127, 0, 'No', 'No', 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(601, 'User Registration', 'userRegister', 3, 1, 0, 37, NULL, NULL, 127, 127, 0, 'No', 'No', 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(615, 'DashBoard', 'txnMonitor', 5, 1, 0, 38, NULL, NULL, 127, 127, 0, 'No', 'No', 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(620, 'TxnMonitor', 'txnMonitor', 5, 1, 0, 39, NULL, NULL, 127, 127, 0, 'No', 'No', 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(668, 'Password Policy', 'passwordPolicy', 1, 1, 0, 10, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+VALUES(151, 'Channel Management', 'channelManagement', 1, 9, 0, 12, NULL, NULL, 0, 0, 0, NULL, NULL, 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
 VALUES(691, 'RepoetMonitor', 'reportIssuanceMonitor', 5, 1, 0, 40, '2017-11-02 12:44:05.000', NULL, 127, 127, 0, 'No', 'No', 'A');
@@ -293,34 +112,31 @@ INSERT INTO page_master
 VALUES(692, 'ReportMonitor', 'reportIssuanceMonitor', 5, 1, 0, 41, '2017-11-02 12:44:37.000', NULL, 127, 127, 0, 'No', 'No', 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(723, 'Outlet Creation Checker', 'outletCreationChecker', 1, 1, 0, 32, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+VALUES(124, 'TransactionMonitoring', 'transactionMonitoring', 1, 1, 0, 30, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(767, 'Report Hub', 'generalizedCSReportList', 1, 456, 0, 18, '2018-04-11 15:16:32.000', NULL, 127, 127, 0, 'No', 'No', 'A');
+VALUES(123, 'Edit Menus', 'editMenusList', 1, 1, 0, 29, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(2015, 'HO Indent Card Request', 'getHOCardRequestList', 1, 30, 8, 1, NULL, NULL, 1, 1, 0, 'Yes', NULL, 'A');
+VALUES(3, 'Add Role', 'NewRole_1', 1, 1, 0, 2, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(2017, 'HO Indent Request', 'instaCard', 1, 30, 0, 1, NULL, NULL, 1, 1, 0, 'Yes', NULL, 'A');
+VALUES(27, 'User Register Checker', 'newUserChecker', 1, 1, 0, 20, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(2018, 'Employer Details', 'corporateList', 1, 7, 0, 101, NULL, NULL, 1, 1, 0, 'No', 'No', 'A');
+VALUES(615, 'DashBoard', 'txnMonitor', 5, 1, 0, 38, NULL, NULL, 127, 127, 0, 'No', 'No', 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(2020, 'Card Block', 'cardHotList', 1, 30, 8, 10, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+VALUES(620, 'TxnMonitor', 'txnMonitor', 5, 1, 0, 39, NULL, NULL, 127, 127, 0, 'No', 'No', 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(2021, 'Card Unblock', 'cardDeHotList', 1, 30, 8, 11, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+VALUES(337, 'Card Request', 'cardRequest', 0, 10, 0, 6, NULL, NULL, 0, 0, 0, 'Yes', 'No', 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(2022, 'Pin Unblock', 'pinUnblock', 1, 30, 8, 10, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+VALUES(41, 'Inventory Request', 'inventoryRequest', 1, 30, 8, 12, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(6000, 'GLCODE Mapping', NULL, 1, 0, 0, 2, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(6002, 'Add Account Details Maker', 'accountDetailsMaker', 1, 6000, 0, 2, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+VALUES(10, 'Card Management', NULL, 1, 0, 0, 5, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
 VALUES(6004, 'Transaction Scenario Checker', 'txnScenarioChecker', 1, 6000, 0, 4, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
@@ -338,6 +154,15 @@ INSERT INTO page_master
 VALUES(6009, 'Add Account Details Checker Demo', 'accountDetailChecker', 1, 6000, 0, 3, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(6002, 'Add Account Details Maker', 'accountDetailsMaker', 1, 6000, 0, 2, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(47, 'Fee Profile', 'getFeeProfileList', 1, 9, 0, 8, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(116, 'Incoming File Process ', 'incomingFileProcessUpload', 1, 222, 0, 4, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
 VALUES(6010, 'Narration Details Checker', 'narrationChecker', 1, 6000, 0, 5, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
@@ -347,7 +172,85 @@ INSERT INTO page_master
 VALUES(6013, 'Add Accounting Entry Maker', 'accEntryMaker', 1, 6000, 0, 1, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(4, 'Customer Enquiry', 'customerEnquiryData', 1, 30, 8, 13, '2021-01-14 10:05:11.912', NULL, 1, 1, 0, '', '', 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
 VALUES(6014, 'Add Accounting Entry Checker', 'accEntryChecker', 1, 6000, 0, 2, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(6000, 'GLCODE Mapping', NULL, 1, 0, 0, 2, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(2022, 'Pin Unblock', 'pinUnblock', 1, 30, 8, 10, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(223, 'Report', NULL, 1, 0, 0, 9, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(12, 'Report Hub', 'generalizedCSReport', 3, 223, 0, 2, '2021-02-20 12:16:27.481', NULL, 1, 1, 0, 'No', 'No', 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(2018, 'Employer Details', 'corporateList', 1, 7, 0, 101, NULL, NULL, 1, 1, 0, 'No', 'No', 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(2021, 'Card Unblock', 'cardDeHotList', 1, 30, 8, 11, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(2020, 'Card Block', 'cardHotList', 1, 30, 8, 10, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(17, 'Sample Menu', 'sampleMenu', 5, 9, 0, 102, '2021-08-04 19:59:41.044', NULL, 1, 1, 0, 'No', 'No', NULL);
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(18, 'Test Menu', 'testMenu', 5, 9, 0, 103, '2021-08-04 20:15:37.121', NULL, 1, 1, 0, 'No', 'No', NULL);
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(6062, 'Request for Cards', 'persoFileUpload', 1, 6061, 6060, 3, NULL, NULL, 0, 0, 0, 'Yes', 'No', 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(32, 'Report Hub', 'generalizedCSReportList', 1, 222, 0, 113, NULL, NULL, 10, 10, 0, NULL, NULL, 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(6065, 'Approve/Reject Card Request', 'getCardRequestApprovalPage', 1, 30, 8, 5, '2022-02-11 19:27:00.000', NULL, 1, 1, 0, 'Yes', 'No', 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(7, 'Employer View', NULL, 1, 0, 0, 16, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(262, 'Bin Profile', 'binProfileList', 4, 9, 0, 10, NULL, NULL, 0, 0, 0, NULL, NULL, 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(50, 'Product Configuration', 'productManagement', 1, 9, 0, 11, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(20, 'MCC Master', 'getMCCList', 4, 9, 0, 5, '2021-10-08 15:00:11.517', NULL, 1, 1, 0, 'No', 'No', 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(15, 'MCC Groups', 'mccGroup', 4, 9, 0, 9, '2021-08-04 14:09:23.494', NULL, 1, 1, 0, 'No', 'No', 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(456, 'CS Report', NULL, 1, 0, 0, 45, NULL, NULL, 127, 127, 0, 'No', 'No', 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(1, 'AccessControl', NULL, 1, 0, 0, 1, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(30, 'Card issuance', NULL, 1, 8, 0, 2, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(34, 'Embossing File Generation', 'embossingGeneration', 1, 30, 8, 5, NULL, NULL, 1, 1, 0, 'Yes', NULL, 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(13, 'Customer Authentication', 'customerAuthData', 0, 30, 8, 14, '2021-02-24 15:06:38.286', NULL, 1, 1, 0, NULL, NULL, 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(222, 'CS', NULL, 1, 0, 0, 9, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(42, 'Instrument Profile', 'cardProfile', 1, 9, 0, 3, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(14, 'Account Closure', 'accountClosure', 3, 30, 8, 15, '2021-03-01 18:28:54.986', NULL, 1, 1, 0, 'No', 'No', 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
 VALUES(6015, 'Fee Waiver', NULL, 1, 0, 0, 2, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
@@ -356,40 +259,10 @@ INSERT INTO page_master
 VALUES(6016, 'Add Fee Waiver Profile', 'feeWaiver', 1, 6015, 0, 1, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(6017, 'Product Setup View', NULL, 1, 0, 0, 8, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+VALUES(404, 'Set Outlet Limit', 'outletLimit', 1, 1, 0, 34, NULL, NULL, 0, 0, 0, 'No', 'No', 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(6018, 'Product Details', 'viewProductDetail', 1, 6017, 0, 1, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(6050, 'Card Status View', NULL, 1, 0, 0, 9, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(6051, 'Card HotlistDeHotlist View', 'viewCardHotListandDeHotListDetails', 1, 6050, 0, 1, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(6052, 'Pin UnBlock View', 'viewPinUnblock', 1, 6050, 0, 1, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(6060, 'Prepaid', NULL, 1, 0, 0, 1, NULL, NULL, 1, 1, 0, 'Yes', 'No', 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(6061, 'Card issuance', NULL, 1, 6060, 0, 2, NULL, NULL, 1, 1, 0, 'Yes', 'No', 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(6062, 'Request for Cards', 'persoFileUpload', 1, 6061, 6060, 3, NULL, NULL, 0, 0, 0, 'Yes', 'No', 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(6063, 'View Batch Summary Details', 'persoFileUploadSummary', 1, 6061, 6060, 4, NULL, NULL, 0, 0, 0, 'Yes', 'No', 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(6065, 'Approve/Reject Card Request', 'getCardRequestApprovalPage', 1, 30, 8, 5, '2022-02-11 19:27:00.000', NULL, 1, 1, 0, 'Yes', 'No', 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(6066, 'View Approved/Rejected Card Requests', 'homepage', 1, 30, 8, 6, '2022-02-11 19:27:00.000', NULL, 1, 1, 0, 'Yes', 'No', 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(6067, 'MO dispatch details', 'getMODispatchDetails', 1, 30, 8, 6, '2022-02-11 19:27:00.000', NULL, 1, 1, 0, 'Yes', 'No', 'A');
+VALUES(36, 'Query EMD account balance', 'emdAccountBalance', 5, 30, 8, 16, '2022-03-25 22:58:20.288', NULL, 1, 1, 0, 'No', 'No', 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
 VALUES(6068, 'MO Card Acknowledge', 'cardAck', 1, 6061, 6060, 5, '2022-02-11 19:27:00.000', NULL, 1, 1, 0, 'Yes', 'No', 'A');
@@ -398,80 +271,208 @@ INSERT INTO page_master
 VALUES(6069, 'MO Registration Checker', 'moCheckerList', 1, 1, 0, 43, '2022-03-15 11:00:54.000', NULL, 1, 1, 0, NULL, 'No', 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(11, 'MO Dispatch File Upload', 'moDispatchUpload', 1, 30, 8, 3, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
 VALUES(6070, 'CO Registration Checker', 'coCheckerList', 1, 1, 0, 43, '2022-03-16 10:36:50.000', NULL, 1, 1, 0, NULL, 'No', 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(6071, 'Release MO funds', 'getMoFund', 1, 8, 0, 11, '2022-03-15 15:31:26.000', NULL, 1, 1, 0, 'Yes', 'No', 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(6096, 'View available base plastic', 'viewBasePlasticCount', 1, 30, 8, 9, '2022-03-07 14:50:36.727', NULL, 1, 1, 0, 'No', 'No', 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
 VALUES(6097, 'Add base plastic card inventory', 'addBasePlasticCount', 1, 30, 8, 11, '2022-03-15 15:31:26.000', NULL, 1, 1, 0, 'Yes', 'No', 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(6071, 'Release MO funds', 'getMoFund', 1, 8, 0, 11, '2022-03-15 15:31:26.000', NULL, 1, 1, 0, 'Yes', 'No', 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
 VALUES(6098, 'View Card Request', 'cardRequestView', 1, 30, 8, 15, '2022-06-03 15:14:25.000', NULL, 1, 1, 0, '', '', 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(6099, 'View Transaction Statement', 'getStatementEnquiry', 1, 222, 0, 11, NULL, NULL, 1, 1, 0, 'Yes', 'No', 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(6100, 'Contact Center Onboarding', 'getContactCenterList', 1, 9, 0, 3, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(6102, 'ACC Entry Maker', 'accEntryMaker', 1, 8, 0, 11, NULL, NULL, 1, 1, 0, 'Yes', 'No', 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(6103, 'DR Cr CodeChecker', 'drCrCodeChecker', 1, 8, 0, 11, NULL, NULL, 1, 1, 0, 'Yes', 'No', 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(6104, 'DR CR CodeMaker', 'drCrCodeMaker', 1, 8, 0, 11, NULL, NULL, 1, 1, 0, 'Yes', 'No', 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(6105, 'Narration Checker', 'narrationChecker', 1, 8, 0, 11, NULL, NULL, 1, 1, 0, 'Yes', 'No', 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(6106, 'Narration Maker', 'narrationMaker', 1, 8, 0, 11, NULL, NULL, 1, 1, 0, 'Yes', 'No', 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(6107, 'Txn Scenario Checker', 'txnScenarioChecker', 1, 8, 0, 11, NULL, NULL, 1, 1, 0, 'Yes', 'No', 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(6108, 'Txn Scenario Maker', 'txnScenarioMaker', 1, 8, 0, 11, NULL, NULL, 1, 1, 0, 'Yes', 'No', 'A');
-INSERT INTO page_master
-(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(6109, 'Account Detail Checker', 'accountDetailChecker', 1, 8, 0, 11, NULL, NULL, 1, 1, 0, 'Yes', 'No', 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
 VALUES(6110, 'Account Details Maker', 'accountDetailsMaker', 1, 8, 0, 11, NULL, NULL, 1, 1, 0, 'Yes', 'No', 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(6111, 'ACC Entry Checker', 'accEntryChecker', 1, 8, 0, 11, NULL, NULL, 1, 1, 0, 'Yes', 'No', 'A');
+VALUES(6108, 'Txn Scenario Maker', 'txnScenarioMaker', 1, 8, 0, 11, NULL, NULL, 1, 1, 0, 'Yes', 'No', 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(6112, 'Transaction Statement', 'getCustomerAuthDetails', 1, 6113, 0, 1, NULL, NULL, 1, 1, 0, '', '', 'A');
+VALUES(6107, 'Txn Scenario Checker', 'txnScenarioChecker', 1, 8, 0, 11, NULL, NULL, 1, 1, 0, 'Yes', 'No', 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(6106, 'Narration Maker', 'narrationMaker', 1, 8, 0, 11, NULL, NULL, 1, 1, 0, 'Yes', 'No', 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(6105, 'Narration Checker', 'narrationChecker', 1, 8, 0, 11, NULL, NULL, 1, 1, 0, 'Yes', 'No', 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(6104, 'DR CR CodeMaker', 'drCrCodeMaker', 1, 8, 0, 11, NULL, NULL, 1, 1, 0, 'Yes', 'No', 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(6103, 'DR Cr CodeChecker', 'drCrCodeChecker', 1, 8, 0, 11, NULL, NULL, 1, 1, 0, 'Yes', 'No', 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(37, 'Fee Transaction Queue Clearance', '', 0, 0, 0, 46, '2022-10-21 11:39:19.028', NULL, 3, 3, 0, 'Yes', 'No', 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(40, 'Fee Transaction Queue Clearance Checker', 'getFeeTransactionChecker', 1, 38, 0, 3, '2022-10-21 11:53:52.064', NULL, 3, 3, 0, 'No', 'No', 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(39, 'Fee Transaction Queue Clearance maker', 'getFeeTransactionMaker', 1, 38, 0, 2, '2022-10-21 11:52:54.948', NULL, 3, 3, 0, 'No', 'No', 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(38, 'Fee Transaction Queue Clearance', NULL, 1, 0, 0, 47, '2022-10-21 11:51:37.722', NULL, 3, 3, 0, 'No', 'No', 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
 VALUES(6113, 'Enquiry', NULL, 1, 0, 0, 8, NULL, NULL, 1, 1, 0, '', '', 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(6099, 'View Transaction Statement', 'getStatementEnquiry', 1, 222, 0, 11, NULL, NULL, 1, 1, 0, 'Yes', 'No', 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(6111, 'ACC Entry Checker', 'accEntryChecker', 1, 8, 0, 11, NULL, NULL, 1, 1, 0, 'Yes', 'No', 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(6102, 'ACC Entry Maker', 'accEntryMaker', 1, 8, 0, 11, NULL, NULL, 1, 1, 0, 'Yes', 'No', 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(6109, 'Account Detail Checker', 'accountDetailChecker', 1, 8, 0, 11, NULL, NULL, 1, 1, 0, 'Yes', 'No', 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(6112, 'Transaction Statement', 'getCustomerAuthDetails', 1, 6113, 0, 1, NULL, NULL, 1, 1, 0, '', '', 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
 VALUES(6114, 'View Card Details', 'CardDetail', 1, 222, 0, 2, NULL, NULL, 1, 1, 0, 'No', 'No', 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(52, 'View Batchwise Fee Transactions', 'viewBatchwiseFeeTransactions', 1, 38, 0, 4, NULL, NULL, 3, 3, 0, NULL, NULL, 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(601, 'User Registration', 'userRegister', 3, 1, 0, 37, NULL, NULL, 127, 127, 0, 'No', 'No', 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(6067, 'MO dispatch details', 'getMODispatchDetails', 1, 30, 8, 6, '2022-02-11 19:27:00.000', NULL, 1, 1, 0, 'Yes', 'No', 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(19, 'Wallet Management', 'getWallets', 5, 9, 0, 104, '2021-08-25 08:42:23.517', NULL, 1, 1, 0, 'No', 'No', 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(23, 'Topup profile', 'getTopupProfileList', 6, 9, 0, 107, '2021-12-23 17:39:14.222', NULL, 1, 1, 0, 'No', 'No', NULL);
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(16, 'Wallet Profile Group', 'getWalletProfileList', 5, 9, 0, 101, '2021-08-04 19:43:25.037', NULL, 1, 1, 0, 'No', 'No', 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(24, 'Topup Profile', 'getTopupProfileTemplateList', 6, 9, 0, 111, '2022-01-06 12:12:39.424', NULL, 1, 1, 0, 'No', 'No', 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(6060, 'Prepaid', NULL, 1, 0, 0, 1, NULL, NULL, 1, 1, 0, 'Yes', 'No', 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(6061, 'Card issuance', NULL, 1, 6060, 0, 2, NULL, NULL, 1, 1, 0, 'Yes', 'No', 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(28, 'Incoming File Process', 'incomingFileProcessUpload', 1, 9, 0, 113, NULL, NULL, 10, 10, 0, NULL, NULL, 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(6063, 'View Batch Summary Details', 'persoFileUploadSummary', 1, 6061, 6060, 4, NULL, NULL, 0, 0, 0, 'Yes', 'No', 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(6066, 'View Approved/Rejected Card Requests', 'homepage', 1, 30, 8, 6, '2022-02-11 19:27:00.000', NULL, 1, 1, 0, 'Yes', 'No', 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
 VALUES(6115, 'Block card', 'cardBlock', 1, 222, 0, 5, NULL, NULL, 1, 1, 0, 'No', 'No', 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(6116, 'MO maker/checker', 'moCheckerList', 1, 1, 0, 8, '2022-03-07 14:50:36.727', NULL, 1, 1, 0, 'No', 'No', 'A');
+VALUES(668, 'Password Policy', 'passwordPolicy', 1, 1, 0, 10, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
-VALUES(6117, 'CO maker/checker', 'coCheckerList', 1, 1, 0, 9, '2022-03-07 14:50:36.727', NULL, 1, 1, 0, 'No', 'No', 'A');
+VALUES(49, 'Transaction Profile', 'txnProfileTemp', 1, 9, 0, 7, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(46, 'Limit Profile', 'limitProfile', 1, 9, 0, 8, '2022-01-20 11:24:17.000', NULL, 1, 1, 0, NULL, NULL, 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(51, 'Product Configuration Maker/Checker', 'productManagementChecker', 1, 9, 0, 12, '2021-12-29 19:30:13.000', NULL, 1, 1, 0, NULL, NULL, 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(26, 'Embossa Vendor Onboarding', 'getEmbossaList', 4, 9, 0, 2, '2022-01-31 11:55:40.096', NULL, 2, 2, 0, 'No', 'No', 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(25, 'Card Image Code Master', 'cardImageMasterList', 4, 9, 0, 1, '2022-01-21 19:49:55.801', NULL, 1, 1, 0, 'No', 'No', 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(6100, 'Contact Center Onboarding', 'getContactCenterList', 1, 9, 0, 3, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(8, 'NCMC-DCMS', NULL, 1, 0, 0, 3, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(22, 'Transaction and Fee master', 'getFeeTxnList', 4, 9, 0, 4, '2021-12-06 10:29:53.736', NULL, 1, 1, 0, 'No', 'No', 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(6096, 'View available base plastic', 'viewBasePlasticCount', 1, 30, 8, 9, '2022-03-07 14:50:36.727', NULL, 1, 1, 0, 'No', 'No', 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
 VALUES(6118, 'View Dispatched and Issued Cards Summary', 'viewCardInventorySummary', 1, 30, 8, 18, '2023-03-09 10:37:49.000', NULL, 1, 1, 0, 'No', 'No', 'A');
 INSERT INTO page_master
 (id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
 VALUES(6119, 'View Card Inventory Summary', 'viewCardInventorySummary', 1, 6061, 6060, 9, '2023-03-09 15:10:47.000', NULL, 1, 1, 0, 'Yes', 'No', 'A');
-
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(767, 'Report Hub', 'generalizedCSReportList', 1, 456, 0, 18, '2018-04-11 15:16:32.000', NULL, 127, 127, 0, 'No', 'No', 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(6116, 'MO maker/checker', 'moCheckerList', 1, 1, 0, 8, '2022-03-07 14:50:36.727', NULL, 1, 1, 0, 'No', 'No', 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(425, 'Role List', 'roleList', 4, 1, 0, 12, NULL, NULL, 0, 0, 0, NULL, NULL, 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(267, 'Role List', 'roleList', 4, 1, 0, 12, NULL, NULL, 0, 0, 0, NULL, NULL, 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(101, 'User Unlock', 'userUnlock', 1, 1, 0, 15, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(2, 'Link Registration', 'registerLinkMenu', 1, 1, 0, 11, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(31, 'MO registration maker', 'moList', 1, 1, 0, 6, '2022-03-07 14:50:36.727', NULL, 1, 1, 0, 'No', 'No', 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(71, 'Branch Master', 'editBranch', 1, 1, 0, 5, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(72, 'Institution Master', 'editInstitution', 1, 1, 0, 1, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(73, 'Issuer Master', 'editBank', 1, 1, 0, 3, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(75, 'Zone Master', 'editZone', 1, 1, 0, 4, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(76, 'User Master', 'newUserChecker', 1, 1, 0, 13, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(5, 'Outlet User Unlock', 'outletUserUnlock', 4, 1, 0, 16, NULL, NULL, 0, 0, 0, NULL, NULL, 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(33, 'CO registration maker', 'coList', 1, 1, 0, 7, '2022-03-14 13:07:47.601', NULL, 1, 1, 0, 'No', 'No', 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(264, 'Outlet Master', 'outlet', 1, 1, 0, 14, NULL, NULL, 1, 1, 0, NULL, NULL, 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(6117, 'CO maker/checker', 'coCheckerList', 1, 1, 0, 9, '2022-03-07 14:50:36.727', NULL, 1, 1, 0, 'No', 'No', 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(6, 'test one', 'test', 5, 9, 0, 114, '2023-04-06 17:15:59.218', '2023-04-06 17:15:59.218', 1, 1, 0, 'No', 'No', NULL);
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(6120, 'test one', 'test', 6, 9, 0, 115, '2023-04-10 10:07:21.397', '2023-04-10 10:07:21.397', 1, 1, 0, 'No', 'No', NULL);
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(21, 'Partner Master', 'editPartner', 1, 1, 0, 2, '2021-12-06 11:14:44.000', NULL, 1, 1, 0, 'No', 'No', 'A');
+INSERT INTO page_master
+(id, page_name, page_link, user_group_id, parent_page_id, grand_parent_page_id, display_order, created_date, updated_date, created_by, updated_by, issuer_id, outlet, customer, status)
+VALUES(6121, 'test page', '', 1, 0, 0, 48, '2023-05-03 15:31:05.962', '2023-05-03 15:31:05.962', 1, 1, 0, 'No', 'No', NULL);
 
 
 INSERT INTO role_page_link
@@ -569,6 +570,30 @@ INSERT INTO role_page_link
 VALUES(1, 33);
 INSERT INTO role_page_link
 (role_id, page_id)
+VALUES(1, 51);
+INSERT INTO role_page_link
+(role_id, page_id)
+VALUES(1, 6100);
+INSERT INTO role_page_link
+(role_id, page_id)
+VALUES(1, 6099);
+INSERT INTO role_page_link
+(role_id, page_id)
+VALUES(1, 222);
+INSERT INTO role_page_link
+(role_id, page_id)
+VALUES(1, 264);
+INSERT INTO role_page_link
+(role_id, page_id)
+VALUES(1, 6117);
+INSERT INTO role_page_link
+(role_id, page_id)
+VALUES(1, 6116);
+INSERT INTO role_page_link
+(role_id, page_id)
+VALUES(1, 6114);
+INSERT INTO role_page_link
+(role_id, page_id)
 VALUES(5, 51);
 INSERT INTO role_page_link
 (role_id, page_id)
@@ -584,124 +609,10 @@ INSERT INTO role_page_link
 VALUES(5, 6070);
 INSERT INTO role_page_link
 (role_id, page_id)
-VALUES(4, 8);
-INSERT INTO role_page_link
-(role_id, page_id)
-VALUES(4, 11);
-INSERT INTO role_page_link
-(role_id, page_id)
-VALUES(4, 30);
-INSERT INTO role_page_link
-(role_id, page_id)
-VALUES(4, 32);
-INSERT INTO role_page_link
-(role_id, page_id)
-VALUES(4, 222);
-INSERT INTO role_page_link
-(role_id, page_id)
-VALUES(4, 414);
-INSERT INTO role_page_link
-(role_id, page_id)
-VALUES(4, 668);
-INSERT INTO role_page_link
-(role_id, page_id)
-VALUES(4, 6065);
-INSERT INTO role_page_link
-(role_id, page_id)
-VALUES(4, 6066);
-INSERT INTO role_page_link
-(role_id, page_id)
-VALUES(4, 6067);
-INSERT INTO role_page_link
-(role_id, page_id)
-VALUES(4, 6097);
-INSERT INTO role_page_link
-(role_id, page_id)
-VALUES(4, 6098);
-INSERT INTO role_page_link
-(role_id, page_id)
-VALUES(6, 6060);
-INSERT INTO role_page_link
-(role_id, page_id)
-VALUES(6, 6061);
-INSERT INTO role_page_link
-(role_id, page_id)
-VALUES(6, 6062);
-INSERT INTO role_page_link
-(role_id, page_id)
-VALUES(6, 6063);
-INSERT INTO role_page_link
-(role_id, page_id)
-VALUES(6, 6068);
-INSERT INTO role_page_link
-(role_id, page_id)
-VALUES(6, 6016);
-INSERT INTO role_page_link
-(role_id, page_id)
-VALUES(6, 6017);
-INSERT INTO role_page_link
-(role_id, page_id)
-VALUES(6, 32);
-INSERT INTO role_page_link
-(role_id, page_id)
-VALUES(6, 222);
-INSERT INTO role_page_link
-(role_id, page_id)
-VALUES(4, 116);
-INSERT INTO role_page_link
-(role_id, page_id)
-VALUES(1, 51);
-INSERT INTO role_page_link
-(role_id, page_id)
-VALUES(1, 6100);
-INSERT INTO role_page_link
-(role_id, page_id)
-VALUES(4, 39);
-INSERT INTO role_page_link
-(role_id, page_id)
-VALUES(4, 40);
-INSERT INTO role_page_link
-(role_id, page_id)
-VALUES(4, 52);
-INSERT INTO role_page_link
-(role_id, page_id)
-VALUES(4, 6114);
-INSERT INTO role_page_link
-(role_id, page_id)
-VALUES(6, 6020);
-INSERT INTO role_page_link
-(role_id, page_id)
-VALUES(6, 6021);
-INSERT INTO role_page_link
-(role_id, page_id)
-VALUES(6, 6022);
-INSERT INTO role_page_link
-(role_id, page_id)
-VALUES(1, 222);
-INSERT INTO role_page_link
-(role_id, page_id)
-VALUES(1, 264);
-INSERT INTO role_page_link
-(role_id, page_id)
 VALUES(5, 723);
-INSERT INTO role_page_link
-(role_id, page_id)
-VALUES(1, 6117);
-INSERT INTO role_page_link
-(role_id, page_id)
-VALUES(1, 6116);
-INSERT INTO role_page_link
-(role_id, page_id)
-VALUES(4, 6096);
-INSERT INTO role_page_link
-(role_id, page_id)
-VALUES(1, 6114);
-INSERT INTO role_page_link
-(role_id, page_id)
-VALUES(4, 6118);
-INSERT INTO role_page_link
-(role_id, page_id)
-VALUES(6, 6119);
+
+
+
 
 
 INSERT INTO user_master
